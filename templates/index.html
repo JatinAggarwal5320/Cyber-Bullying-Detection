@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberbullying Detection</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            max-width: 700px;
+            margin-top: 60px;
+        }
+        .title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        textarea.form-control {
+            height: 180px;
+            font-size: 1.1rem;
+            resize: none;
+        }
+        .btn-analyze {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .result {
+            margin-top: 30px;
+            font-size: 1.4rem;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+        .bullying {
+            background-color: #dc3545;
+            box-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
+        }
+        .non-bullying {
+            background-color: #28a745;
+            box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Cyberbullying Detector</a>
+    </nav>
+
+    <div class="container">
+        <div class="title">Cyberbullying Detection Using Python</div>
+        <form method="POST">
+            <div class="form-group">
+                <textarea name="text" class="form-control" placeholder="Type or paste a message here...">{{ request.form.text }}</textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-block btn-analyze">Analyze</button>
+        </form>
+
+        {% if prediction is not none %}
+            <div class="result {% if prediction == 1 %}bullying{% else %}non-bullying{% endif %}">
+                {% if prediction == 1 %}
+                    🚫 Bullying Detected
+                {% else %}
+                    ✅ Non-Bullying Text
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
