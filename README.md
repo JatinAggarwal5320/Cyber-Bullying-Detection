@@ -2,7 +2,7 @@
   <img src="babe_extension/icons/icon-128.png" alt="BABE Logo" width="100" />
 </p>
 
-<h1 align="center">BABE — Bullies & Bullying Eradicated</h1>
+<h1 align="center">B.A.B.E — Bullies & Bullying Eradicated</h1>
 
 <p align="center">
   <strong>A Chrome Extension that detects and censors cyberbullying & hate speech in real-time using machine learning — 100% client-side and privacy-first.</strong>
