@@ -5,7 +5,7 @@
 <h1 align="center">B.A.B.E — Bullies & Bullying Eradicated</h1>
 
 <p align="center">
-  <strong>A Chrome Extension that detects and censors cyberbullying & hate speech in real-time using machine learning — 100% client-side and privacy-first.</strong>
+  <strong>A Chrome Extention that detects and censors cyberbullying & hate speech in real-time using machine learning — 100% client-side and privacy-first.</strong>
 </p>
 
 <p align="center">
