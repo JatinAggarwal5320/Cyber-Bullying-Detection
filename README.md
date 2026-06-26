@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="babe_extension/icons/icon-128.png" alt="BABE Logo" width="100" />
+  <img src="babe_extension/icons/icon-128.png" alt="BABE logo" width="100" />
 </p>
 
 <h1 align="center">B.A.B.E — Bullies & Bullying Eradicated</h1>
