@@ -39,7 +39,7 @@
 | 🌫️ **Smart Blur Censoring** | Detected content is blurred with a smooth CSS filter — hover to reveal |
 | 🤖 **Dual ML Models** | Choose between **LinearSVC** (97.3% accuracy) or **Logistic Regression** (93.6% accuracy) |
 | 🎚️ **Adjustable Sensitivity** | Fine-tune the detection threshold from lenient to aggressive |
-| 📋 **Domain Whitelist** | Exclude trusted sites from scanning |
+| 📋 **Domain White list** | Exclude trusted sites from scanning |
 | 📊 **Live Statistics** | Track pages scanned and sentences blocked in the dashboard |
 | ⚡ **Performance Optimized** | Batched DOM scanning with `requestAnimationFrame` — zero UI jank |
 | 🔄 **Dynamic Content** | `MutationObserver` catches new content on social media feeds (Twitter, Reddit, etc.) |
